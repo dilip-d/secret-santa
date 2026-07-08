@@ -9,7 +9,7 @@ from src.services.secret_santa_service import SecretSantaService
 from src.exceptions.custom_exceptions import SecretSantaError, FileProcessingError
 
 
-def main(employees_file: str, previous_assignments_file: Optional[str] = None, 
+def main(employees_file: str, previous_assignments_file: Optional[str] = None,
          output_file: Optional[str] = None) -> None:
     """
     Main function to run the Secret Santa assignment.

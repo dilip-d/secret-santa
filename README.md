@@ -5,6 +5,7 @@ A modular Python application that automates Secret Santa gift assignments while 
 - Each employee is assigned exactly one secret child.
 - Previous year's assignments can be avoided.
 - Results are exported to a CSV file.
+- Previous assignments can be supplied from a CSV or Excel workbook.
 
 ## Features
 
@@ -37,10 +38,16 @@ Without previous assignments:
 python run.py data/employees.csv
 ```
 
-With previous assignments:
+With previous assignments from CSV:
 
 ```bash
 python run.py data/employees.csv --previous data/previous_assignments.csv
+```
+
+With previous assignments from Excel:
+
+```bash
+python run.py data/employees.csv --previous c:/path/to/Secret-Santa-Game-Result-2023.xlsx
 ```
 
 The generated assignments will be written to:
